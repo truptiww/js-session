@@ -6,7 +6,7 @@
 // The concat() method returns a new array, containing the joined arrays.
 // The concat() method does not change the existing arrays.
 
-let concatMethod = ['fruits', 'vegetables', 'salads'];
+let concatMethod = ['fruits', 'vegetables', 'salads' , 'fast-food'];
 let concatMethod1 = ['pizza', 'burger'];
 let concatMethod2 = [[25], [23, 34]];
 
