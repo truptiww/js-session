@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Assignment 1</title>
+  </head>
+  <body>
+    <div>
+      <img
+        src="images/smartphone-v5.webp"
+        alt="smartphone"
+        width="70px"
+        height="89px"
+        id="mobileimg"
+      />
+    </div>
+    <script>
+      let imagefield = document.getElementById('mobileimg');
+      console.log(imagefield);
+      console.log(typeof imagefield); //HTMLElement - showing as object
+      //1. What is source of image
+      let imgsrc = imagefield.src; //src of image
+      console.log(imgsrc);
+      //2. What is current height
+      let imgheight = imagefield.height;
+      console.log('height of the image is: ' + imgheight);
+      //3. What is current width
+      let imgwidth = imagefield.width;
+      console.log('width of the image is: ' + imgwidth);
+    </script>
+  </body>
+</html>

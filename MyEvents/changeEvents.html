@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- tag, element-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Events</title>
+  </head>
+  <body>
+    <label id="label">Are you married :</label>
+    <input type="checkbox" id="answer" name="ans" onchange="stateChange()" />
+    <br />
+    <textarea onselect="selectEvent()">
+        Neosoft Pvt Ltd, Dadar, Mumbai
+    </textarea>
+    <b>hi</b>
+    <!-- b : tag, bold : element-->
+    <script>
+      let stateChange = function () {
+        console.log('Checkbox state  changed');
+      };
+      function selectEvent() {
+        console.log('text selected');
+      }
+    </script>
+  </body>
+</html>
