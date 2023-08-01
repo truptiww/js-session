@@ -36,6 +36,7 @@ console.log('Popped:' + popped);
 console.log(array5);
 array5.push('suman', 'Prakash', 'Guru', 'Karuna', 'Kalpesh');
 console.log(array5);
+//['hari', 'ram', 'pooja', 'suman', 'Prakash', 'Guru', 'Karuna', 'Kalpesh']
 //arrays are mutable : same array gets modified
 
 //slice
@@ -49,7 +50,7 @@ console.log(array5);
 
 console.log('with negative indexes...');
 SlicedArray = array5.slice(-3, -4);
-console.log(slicedArray);
+console.log(SlicedArray);
 console.log(array5);
 console.log('with start index...');
 SlicedArray = array5.slice(5); // end index will be end of original array

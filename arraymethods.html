@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body{
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 16px;
+        }
+        pre {
+            padding: 16px;
+            border-radius: 4px;
+            border: 1px solid #d3dce6;
+            background-color: #383b40;
+            margin-bottom: 16px;
+            overflow: auto;
+            font-family: "Droid Sans Mono","Inconsolata","Menlo","Consolas","Bitstream Vera Sans Mono","Courier",monospace;
+            font-size: 14px;
+            line-height: 20px;
+            color: #d5d5d5;
+        }
+    </style>
+</head>
+<body>
+    <h3> The Array object is used to store multiple values in a single variable.</h3>
+    <h3>An array is an object that can store multiple values at once</h3>
+    <hr/>
+    <p><strong>You can create an array using two ways:</strong></p>
+    <p><b>1. Using an array literal</b></p>
+    <p>The easiest way to create an array is by using an array literal []. For example,</p>
+    <p><pre><code>const array1 = ["eat", "sleep"];</code></pre></p>
+    <hr/>
+    <p><b>2. Using the new keyword</b></p>
+    <p>You can also create an array using JavaScript's new keyword.</p>
+    <p><pre><code>const array2 = new Array('apple', 'banana');</code></pre></p>
+    <hr/>
+    <p><strong>You can also store arrays, functions and other objects inside an array. For example,</strong></p>
+    <pre><code>const newData = [
+        {'task1': 'exercise'},
+        [1, 2 ,3],
+        function hello() { console.log('hello')}
+    ];</code></pre>
+    <hr/>
+    <h3>Access Elements of an Array</h3>
+    <p>You can access elements of an array using indices (0, 1, 2 …).</p>
+    <p><strong>Note: Array's index starts with 0, not 1.</strong></p>
+    <hr/>
+    <h3>built-in method</h3>
+    <ol>
+        <li>Push Method - The push() method adds an element at the end of the array
+            <pre><code>let dailyActivities = ['eat', 'sleep'];
+                // add an element at the end
+                dailyActivities.push('exercise');
+                
+                console.log(dailyActivities); //  ['eat', 'sleep', 'exercise']</code></pre>
+        </li>
+        <li>The unshift() method adds an element at the beginning of the array. For example,
+            <pre><code>let dailyActivities = ['eat', 'sleep' ,'exercise'];
+
+                //add an element at the start
+                dailyActivities.unshift('work'); 
+                
+                console.log(dailyActivities); // ['work', 'eat', 'sleep' ,'exercise']</code></pre>
+        </li>
+        <li>You can also add elements or change the elements by accessing the index value.
+            <pre><code>let dailyActivities = ['work', 'eat', 'sleep', 'exercise'];
+
+                // this will add the new element 'exercise' at the 2 index
+                dailyActivities[2] = 'medidate';
+                
+                console.log(dailyActivities); //  ['work', 'eat', 'medidate', 'exercise']</code></pre>
+                <ol>
+                    <li>Suppose, an array has four elements. If you try to add an element at index 5 (sixed element), the forth index(5th element) will be undefined. For example,
+                        <pre><code>let dailyActivities = ['work', 'eat', 'medidate', 'exercise'];
+
+                            // this will add the new element 'run' at the 5 index
+                            dailyActivities[5] = 'run';
+                            
+                            console.log(dailyActivities); // ['work', 'eat', 'medidate', 'exercise', empty, 'run']</code></pre>
+                    </li>
+                </ol>
+        </li>
+    </ol>
+    <script src="Scripts/AssignmentArrayapi.js"></script>
+</body>
+</html>
